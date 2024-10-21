@@ -76,7 +76,6 @@ library_management_system/
             - Add docstrings to all classes and methods explaining their purpose and usage.
     #### Step 4: Submission
         1. GitHub Repository:
-            Name : Osama Rabih
             - Ensure your repository is complete with all necessary files and documentation.
             - Provide a link to your GitHub repository.
 
