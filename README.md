@@ -1,20 +1,85 @@
-# Assessment 1 - Advanced Programming
+### Library Management System
 
 ## Project Overview
-This assessment requires you to create a Python application that simulates a simple library management system. The project will involve the use of Object-Oriented Programming (OOP) techniques, classes, and methods. You will also need to document the problem-solving process and provide a clear analysis of your approach.
-## Learning Outcomes
+This project aims to create a Python application that simulates a simple real-world library management system scenario involving the use of Object-Oriented Programming (OOP) techniques and principles such as classes, inheritance, encapsulation, abstraction and polymorphism  in terms of managing a collection of library members and books via enabling the basic functionalities such as:
+- Add books / new members
+- Remove books / existent members
+- Borrow books
+- Return books
+- List available books
+- List borrowed books.
+Documentation is included to ensure clarity as well as Testing for usability and maintainability.
+
+## The System Features
+Book Management Feature: Add and remove books from the library system.
+Member Management Feature: Add and remove members from the the library system.
+Borrowing/Returning Books Features: Enable the library members to borrow and return books.
+Books' Availability Checking Feature: List all exsistant and borrowed books with borrower's information.
+Library User' Types: Differentiate between members types as student and teacher.
+
+### System Structure
+library_management_system
+1.library_management/
+ 1.1. __init__.py
+ 1.2. library.py         
+ 1.3. book.py            
+ 1.4. member.py          
+ 1.5. test_library.py    
+2. README.md              
+3. requirements.txt    
+
+## Classes and Methods
+# Library
+The Library class manages a collection of books and members.
+
+Methods:
+add_book(book): Adds a book to the library's collection.
+remove_book(book): Removes a book from the collection.
+add_member(member): Registers a new member.
+remove_member(member): Removes an existing member.
+borrow_book(book, member): Allows a member to borrow a book if it is available.
+return_book(book, member): Allows a member to return a borrowed book.
+list_available_books(): Lists all books that are currently available.
+list_borrowed_books(): Lists all books currently borrowed, along with borrower details.
+
+# Book
+The Book class represents each book in the library.
+
+Attributes:
+title (str): Title of the book.
+author (str): Author of the book.
+is_borrowed (bool): Tracks if the book is currently borrowed.
+
+# Member 
+The Member class represents a library member with basic details.
+
+Attributes:
+name (str): Name of the member.
+borrowed_books (list): List of books currently borrowed by the member.
+StudentMember and TeacherMember
+StudentMember and TeacherMember are subclasses of Member.
+StudentMember: May have additional borrowing restrictions.
+TeacherMember: Might have extended borrowing privileges.
+
+## Setup Instructions:
+Python version or packages required.
+Instructions to install dependencies listed in requirements.txt (e.g., pip install -r requirements.txt
+
+## Usage Examples:
+Examples such as adding books, borrowing books, etc usage.
+Classes and Methods:
+Explain each class and method with its purpose and parameters.
+
+## Detailed Problem-Solving Processse
+
+
+## Testing
+
+Learning Outcomes
 By completing this assessment, you will be able to:
 - Evaluate Object-Oriented Programming techniques, associated tools, and Application Program Interfaces.
 - Analyze and document a complex task utilizing a range of problem-solving skills.
-## Project Requirements
-- ### Git Repository:
-    - Create a GitHub repository for this project.
-    - Commit your code regularly to demonstrate the development process.
-    - Include a README file that outlines the project, setup instructions, and usage.
-- ### Classes and Methods:
-    - Create classes to represent the main entities in the library management system (e.g., Library, Book, Member).
-    - Each class should have appropriate attributes and methods.
-    - Demonstrate the use of inheritance by creating a subclass for different types of library members (e.g., StudentMember, TeacherMember).
+
 - ### Functionality
     - The Library class should manage a collection of books and members.
     - Implement methods to:
