@@ -22,7 +22,8 @@ class Book:
 
     def __repr__(self):
         """
-        A method to return a book title and author name
-
+        A method represent the book class parameters
+        Return:
+        return a book title and author name
         """
         return f"Book Title: {self.title}, Author: {self.author}"

@@ -1,15 +1,13 @@
 class Library:
     """
     Represents a library.
-
-    Attributes:
-    - books (list): A list of books in the library.
-    - members (list): A list of members in the library.
     """
-
     def __init__(self):
         """
-        Initializes an empty library.
+        Initialises an empty library.
+        Attributes:
+        - books (list): A list of books in the library.
+        - members (list): A list of members in the library.
         """
         self.books = []
         self.members = []

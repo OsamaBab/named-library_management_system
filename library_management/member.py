@@ -3,10 +3,8 @@ class Member:
     A class to represent a library member.
 
     Attributes:
-    name : str
-        The name of the member.
-    borrowed_books : list
-        A list of books borrowed by the member.
+    name : (str) The name of the member.
+    borrowed_books : ([]) A list of books borrowed by the member.
     """
 
     def __init__(self, name):
@@ -15,6 +13,7 @@ class Member:
 
         Parameters:
         name (str): The name of the member.
+        borrowed_books : ([]) A list of books borrowed by the member.
         """
         self.name = name
         self.borrowed_books = []
@@ -70,7 +69,7 @@ class TeacherMember(Member):
 
     def __init__(self, name, teacher_id):
         """
-        Constructs all the necessary attributes for the teacher member object.
+        Constructs all the necessary attributes for the TeacherMember object.
 
         Parameters:
         name (str): The name of the teacher member.
@@ -78,3 +77,11 @@ class TeacherMember(Member):
         """
         super().__init__(name)
         self.teacher_id = teacher_id
+
+    def __repr__(self):
+        """
+        A method represent TeacherMember class parameters
+        Return:
+        return a member name and a member id
+        """
+        return f"Teacher Member: {self.name}, ID: {self.teacher_id}"
