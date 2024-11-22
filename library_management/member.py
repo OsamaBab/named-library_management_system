@@ -80,8 +80,9 @@ class TeacherMember(Member):
 
     def __repr__(self):
         """
-        A method represent TeacherMember class parameters
-        Return:
-        return a member name and a member id
+        For debugging purpose, this method Provides a string representation of the TeacherMember object.
+
+        Returns:
+            str: A formatted string to describe the teacher member.
         """
         return f"Teacher Member: {self.name}, ID: {self.teacher_id}"
