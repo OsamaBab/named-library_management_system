@@ -1,12 +1,20 @@
-'''
-    Test Classes and Methods here
-'''
-
+# Import all required files
 from book import Book
 from library import Library
 from member import Member, TeacherMember, StudentMember
-
+"""
+Description: 
+A file to test your classes and methods.
+Test Classes and Methods here
+"""
 def create_instance():
+    """
+    Description: 
+    Function to create instances for all classes for testing purpose.
+        Attributes:
+        -class (object): The object of a class to create a new object form it
+    """
+    
     # Create a new instance of the Book class
     try:
         book = Book("Eloquent Python", "Abdulhameed")
