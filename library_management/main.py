@@ -62,7 +62,7 @@ def main():
                 library.remove_book(book_to_remove)  # Remove the book if it is exsist
                 # Display confirmation message of the removed book title
                 print(f"Book '{title}' removed from the library.")
-
+            # Display message when entered book title is not exist in the library collection
             else:
                 print(f"No book titled '{title}' found in the library.") 
 
@@ -78,8 +78,9 @@ def main():
             elif member_type == "teacher":
                 teacher_id = input("Enter teacher ID: ").strip()
                 member = TeacherMember(name, teacher_id)
+            # Display message when selected member type  is not exist in the library collection
             else:
-                print("Invalid member type. Please choose either 'student' or 'teacher'.")
+                print("Invalid member type. Please select either 'student' or 'teacher'.")
                 continue
 
             library.add_member(member)  # Add the member to the library
