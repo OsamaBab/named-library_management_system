@@ -41,14 +41,14 @@ library_management_system/
 # Library Class
 The Library class manages books and members collections. It serves as the central hub between The Book and Member classes.
 ## Methods
-Add Book Method: This function adds a book to the library's books list collection.
+- Add Book Method: This function adds a book to the library's books list collection.
 Remove Book Method: It removes Avialable books in the library books list.
-Add Member Method: This function enable new users to register a new membership. it is a dublicated-free method.
-Remove Member Method: this function is a reverse add members method. It removes an existing membership from the libary membership list.
-Borrow Book Method: It enable the library members to borrow available books in the library books list.
-Return Book Method: It enable the books brrowers to return their borrowed books in their borrorowed lis to the library books list.
-List Available Books Method: this function lists all books that are currently available in the library books list.
-List Borrowed Books Method: this function lists all books that are currently borrowed by members along with borrowers details.
+- Add Member Method: This function enable new users to register a new membership. it is a dublicated-free method.
+- Remove Member Method: this function is a reverse add members method. It removes an existing membership from the libary membership list.
+- Borrow Book Method: It enable the library members to borrow available books in the library books list.
+- Return Book Method: It enable the books brrowers to return their borrowed books in their borrorowed lis to the library books list.
+- List Available Books Method: this function lists all books that are currently available in the library books list.
+- List Borrowed Books Method: this function lists all books that are currently borrowed by members along with borrowers details.
 # Book Class
 The Book class represents each book details in the library such as books titles and authors of books.
 ## Methods
@@ -62,42 +62,40 @@ The Student and Teacher Member classes include string representer methods to rep
 Python version or packages required.
 Instructions to install dependencies listed in requirements.txt (e.g., pip install -r requirements.txt
 ## The System Usage:
-Add a new book:
-1. Select option 1
-2. Input the book name
-3. Input the author name
-4. Click entre
-Remove a book:
-1. Select option 2
-2. input the book title
-3. Click entre
-Add a new member:
-1. Slect option 3
-2. Input the name
-3. Input a membership type (student/ teacher)
-4. Input user id
-5. Click entre
-Remove a member:
-1. Select option 4
-2. Input a member name
-3. Click entre
-Borrow a book:
-1. Select option 5
-2. Input a member name
-3. Input the book title
-4. Click entre
-Return a book:
-1. Select option 6
-2. Input a member name
-3. Input a book tilte
-4. Click entre
-List available books:
-1. Select option 7
-2. Click entre
-List borrowed books:
-1. Select option 8
-2. Click entre
+- Add a new book:
+  1. Select option 1
+  2. Input the book name
+  3. Input the author name
+  4. Click entre
+- Remove a book:
+  1. Select option 2
+  2. input the book title
+  3. Click entre
+- Add a new member:
+  1. Slect option 3
+  2. Input the name
+  3. Input a membership type (student/ teacher)
+  4. Input user id
+  5. Click entre
+- Remove a member:
+  1. Select option 4
+  2. Input a member name
+  3. Click entre
+- Borrow a book:
+  1. Select option 5
+  2. Input a member name
+  3. Input the book title
+  4. Click entre
+- Return a book:
+  1. Select option 6
+  2. Input a member name
+  3. Input a book tilte
+  4. Click entre
+- List available books:
+  1. Select option 7
+  2. Click entre
+- List borrowed books:
+  1. Select option 8
+  2. Click entre
 ## Testing
 The library system is tested and its fuctionallities are verified and validated via unittest test cases. all the test cases are successfully passed proving the system's reliability and the robust functionalities' performance. 
-Program Interfaces.
-- Analyze and document a complex task utilizing a range of problem-solving skills.
