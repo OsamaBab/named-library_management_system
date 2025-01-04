@@ -99,3 +99,5 @@ Instructions to install dependencies listed in requirements.txt (e.g., pip insta
   2. Click entre
 ## Testing
 The library system is tested and its fuctionallities are verified and validated via unittest test cases. all the test cases are successfully passed proving the system's reliability and the robust functionalities' performance. 
+## The License
+The license for this project is under the MIT License. For more enquires, See the LICENSE file 
