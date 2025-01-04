@@ -10,7 +10,6 @@ def main():
         The main function and entry point to the Library Management System for users to manage library operations.
       
     """
-
     # creating and initialising the library instance to using it
     library = Library()
     # Create A dictionary to sort and store member names to their respective Member objects for easer and quick access
@@ -18,7 +17,6 @@ def main():
     
     # Welcome message to the Library user
     print("\nWelcome to the Bradford College Library Management System!\n")
-
     # Loop to display menu with handlling the user selections
     while True:
         # Display menu options to users from 1 to 9
