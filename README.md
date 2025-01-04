@@ -9,152 +9,95 @@ This project aims to create a Python application that simulates a simple real-wo
 - List available books
 - List borrowed books.
 Documentation is included to ensure clarity as well as Testing for usability and maintainability.
-
+## The objectives:
+Facilite the core library system's pre-defined operations.
+Organise the library collections such as books and members, and enabl efficient tracking for them.
+Ensuring the code scalability,reusability and maintaiability via demonstrating the Object-Oriented Programming core principles implementation.
 ## The System Features
-Book Management Feature: Add and remove books from the library system.
-Member Management Feature: Add and remove members from the the library system.
-Borrowing/Returning Books Features: Enable the library members to borrow and return books.
-Books' Availability Checking Feature: List all exsistant and borrowed books with borrower's information.
-Library User' Types: Differentiate between members types as student and teacher.
-
-### System Structure
-library_management_system
-1.library_management/
- 1.1. __init__.py
- 1.2. library.py         
- 1.3. book.py            
- 1.4. member.py          
- 1.5. test_library.py    
-2. README.md              
-3. requirements.txt    
-
-## Classes and Methods
-# Library
-The Library class manages a collection of books and members.
-
-Methods:
-add_book(book): Adds a book to the library's collection.
-remove_book(book): Removes a book from the collection.
-add_member(member): Registers a new member.
-remove_member(member): Removes an existing member.
-borrow_book(book, member): Allows a member to borrow a book if it is available.
-return_book(book, member): Allows a member to return a borrowed book.
-list_available_books(): Lists all books that are currently available.
-list_borrowed_books(): Lists all books currently borrowed, along with borrower details.
-
-# Book
-The Book class represents each book in the library.
-
-Attributes:
-title (str): Title of the book.
-author (str): Author of the book.
-is_borrowed (bool): Tracks if the book is currently borrowed.
-
-# Member 
-The Member class represents a library member with basic details.
-
-Attributes:
-name (str): Name of the member.
-borrowed_books (list): List of books currently borrowed by the member.
-StudentMember and TeacherMember
-StudentMember and TeacherMember are subclasses of Member.
-StudentMember: May have additional borrowing restrictions.
-TeacherMember: Might have extended borrowing privileges.
-
-## Setup Instructions:
-Python version or packages required.
-Instructions to install dependencies listed in requirements.txt (e.g., pip install -r requirements.txt
-
-## Usage Examples:
-Examples such as adding books, borrowing books, etc usage.
-Classes and Methods:
-Explain each class and method with its purpose and parameters.
-
-## Detailed Problem-Solving Processse
-
-
-## Testing
-
-Learning Outcomes
-By completing this assessment, you will be able to:
-- Evaluate Object-Oriented Programming techniques, associated tools, and Application Program Interfaces.
-- Analyze and document a complex task utilizing a range of problem-solving skills.
-
-- ### Functionality
-    - The Library class should manage a collection of books and members.
-    - Implement methods to:
-        - Add and remove books from the library.
-        - Add and remove members from the library.
-        - Borrow and return books.
-        - List available books.
-        - List borrowed books and their borrowers.
-- ### Documentation and Analysis:
-    - Document the problem-solving process, including:
-        - Initial problem analysis.
-        - Design decisions and rationale.
-        - Challenges faced and solutions implemented.
-        - Example usage of the classes and methods.
-    - Use docstrings to document the classes and methods.
-    - Include test cases to demonstrate the functionality of your code.
-- ### Project Structure
-Here is a suggested project structure for your library management system:
+1.  Book Management Feature:
+Add and remove books from the library system.
+2. Member Management Feature: 
+Add and remove members from the the library system.
+3. Borrowing/Returning Books Features: 
+Enable the library members to borrow and return books.
+4. Books' Availability Checking Feature: 
+List all exsistant and borrowed books with borrower's information.
+5. Library Users' Types: 
+Differentiate between members types as student and teacher.
+## System Structure
 ```
 library_management_system/
-├── library_management/
+├── Classes/
 │   ├── __init__.py
 │   ├── library.py
 │   ├── book.py
 │   ├── member.py
 │   └── test_library.py
+|── main.py
 ├── README.md
 └── requirements.txt
-```
-- ### Detailed Instructions
-    #### Step 1: Create the Git Repository
-        - Create a new repository on GitHub named library_management_system.
-        - Clone the repository to your local machine.
-        - Set up a basic directory structure as shown above.
-    #### Step 2: Implement the Classes and Methods
-        - Library Class (library.py)
-        - Book Class (book.py)
-        - Member Class and Subclasses (member.py)
-        - Test Cases (test_library.py)
-    #### Step 3: Documentation and Analysis
-        1. README.md:
-            - Provide an overview of the project.
-            - Include setup instructions and usage examples.
-            - Document the classes, methods, and their functionality.
-            #### Classes and Methods
-                - Library: Manages a collection of books and members.
-                    - add_book(book): Adds a book to the library.
-                    - remove_book(book): Removes a book from the library.
-                    - add_member(member): Adds a member to the library.
-                    - remove_member(member): Removes a member from the library.
-                    - borrow_book(book, member): Allows a member to borrow a book.
-                    - return_book(book, member): Allows a member to return a book.
-                    - list_available_books(): Lists all available books in the library.
-                    - list_borrowed_books(): Lists all borrowed books and their borrowers.
-                - Book: Represents a book with a title and author.
-                - Member: Represents a library member with a name and borrowed books.
-                - StudentMember and TeacherMember: Subclasses of Member with additional attributes.
-        2. Docstrings:
-            - Add docstrings to all classes and methods explaining their purpose and usage.
-    #### Step 4: Submission
-        1. GitHub Repository:
-            - Ensure your repository is complete with all necessary files and documentation.
-            - Provide a link to your GitHub repository.
-
-        2. README.md:
-            - Ensure the README file is comprehensive and clearly explains the project, setup instructions, and usage.
-
-        3. Documentation:
-            - Ensure all classes and methods are well-documented with docstrings.
-            - Include a detailed analysis of the problem-solving process in the README or a separate documentation file.
-
-        4. Test Cases:
-            - Ensure the test cases cover all major functionalities and edge cases.
-            - Verify that all tests pass successfully.
-
-### Feedback
-- Feedback will be provided through the Modoole.
-- Detailed comments on the code, documentation, and overall approach will be given.
+```  
+## Classes and Methods
+# Library Class
+The Library class manages books and members collections. It serves as the central hub between The Book and Member classes.
+## Methods
+Add Book Method: This function adds a book to the library's books list collection.
+Remove Book Method: It removes Avialable books in the library books list.
+Add Member Method: This function enable new users to register a new membership. it is a dublicated-free method.
+Remove Member Method: this function is a reverse add members method. It removes an existing membership from the libary membership list.
+Borrow Book Method: It enable the library members to borrow available books in the library books list.
+Return Book Method: It enable the books brrowers to return their borrowed books in their borrorowed lis to the library books list.
+List Available Books Method: this function lists all books that are currently available in the library books list.
+List Borrowed Books Method: this function lists all books that are currently borrowed by members along with borrowers details.
+# Book Class
+The Book class represents each book details in the library such as books titles and authors of books.
+## Methods
+Book class includes string representer method to represent books details as strings for testing and debugging purposes.
+# Member Class
+The Member class represents a library's memberships with basic details such as name.
+Member class includes two subclasses, Member Student class and Member Teacher class. These subclasses serve as special extention to the member class via adding the id attribute that differentiates between students membership and teachers membership helping in the membership management accross the library key operations.
+## Methods
+The Student and Teacher Member classes include string representer methods to represent these two subclasses attributes for testing and debugging purposes.
+## Setup Instructions:
+Python version or packages required.
+Instructions to install dependencies listed in requirements.txt (e.g., pip install -r requirements.txt
+## The System Usage:
+Add a new book:
+1. Select option 1
+2. Input the book name
+3. Input the author name
+4. Click entre
+Remove a book:
+1. Select option 2
+2. input the book title
+3. Click entre
+Add a new member:
+1. Slect option 3
+2. Input the name
+3. Input a membership type (student/ teacher)
+4. Input user id
+5. Click entre
+Remove a member:
+1. Select option 4
+2. Input a member name
+3. Click entre
+Borrow a book:
+1. Select option 5
+2. Input a member name
+3. Input the book title
+4. Click entre
+Return a book:
+1. Select option 6
+2. Input a member name
+3. Input a book tilte
+4. Click entre
+List available books:
+1. Select option 7
+2. Click entre
+List borrowed books:
+1. Select option 8
+2. Click entre
+## Testing
+The library system is tested and its fuctionallities are verified and validated via unittest test cases. all the test cases are successfully passed proving the system's reliability and the robust functionalities' performance. 
+Program Interfaces.
+- Analyze and document a complex task utilizing a range of problem-solving skills.
