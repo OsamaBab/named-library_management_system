@@ -58,9 +58,14 @@ The Member class represents a library's memberships with basic details such as n
 Member class includes two subclasses, Member Student class and Member Teacher class. These subclasses serve as special extention to the member class via adding the id attribute that differentiates between students membership and teachers membership helping in the membership management accross the library key operations.
 ## Methods
 The Student and Teacher Member classes include string representer methods to represent these two subclasses attributes for testing and debugging purposes.
-## Setup Instructions:
-Python version or packages required.
-Instructions to install dependencies listed in requirements.txt (e.g., pip install -r requirements.txt
+## Setup Instructions
+1. Download the repository to your local machine using this link:  
+ https://github.com/OsamaBab/Console-based-Banking-Application/archive/refs/heads/main.zip  
+2. Clone the repository remotely using this command line:   
+  git clone https://github.com/OsamaBab/library_management_system.git
+3. Direct to the directory of the project: cd library_management_system
+4. Install the required dependencies: pip install -r requirements.txt.
+5. Run the bank application using command line: python main.py
 ## The System Usage:
 - Add a new book:
   1. Select option 1
